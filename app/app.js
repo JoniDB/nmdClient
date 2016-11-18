@@ -7,6 +7,9 @@ var _templateBase = './templates';
 
 var app = angular.module('app', ['ngRoute', 'ngAnimate', 'ngMaterial']);
 
+var osc = require('osc');
+app.constant('osc',osc);
+
 var index = require('./modules/index');
 
 app.config(['$routeProvider', function($routeProvider) {
